@@ -9,7 +9,7 @@ List<Map> categories = [
   
   {'name': 'Cats', 'iconPath': 'images/cat.png'},
   {'name': 'Dogs', 'iconPath': 'images/dog.png'},
-  {'name': 'Bunnies', 'iconPath': 'images/rabbit.png'},
-  {'name': 'Birds', 'iconPath': 'images/bird.png'},
   {'name': 'Horses', 'iconPath': 'images/horse.png'},
+  {'name': 'Bunnies', 'iconPath': 'images/rabbit.png'},
+  {'name': 'Parrots', 'iconPath': 'images/parrot.png'},
 ];
