@@ -44,7 +44,10 @@ class Screen2 extends StatelessWidget {
             margin: EdgeInsets.only(top: 20),
             child: Align(
               alignment: Alignment.topCenter,
-              child: Image.asset('iamges/pet-cat2.png'),
+              child: Hero(
+                tag: '1',
+                child: Image.asset('iamges/pet-cat2.png')
+              ),
             ),
           ),
           Align(
@@ -62,16 +65,27 @@ class Screen2 extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
+              margin: EdgeInsets.symmetric(horizontal: 20),
               height: 150,
               child: Row(
                 children: [
                   Container(
-                    height: 50,
-                    width: 50,
-                    color: primaryGreen,
-                    child: Icon(Icons.favorite_border),
+                    height: 60,
+                    width: 70,
+                    decoration: BoxDecoration(
+                      color: primaryGreen,
+                      borderRadius: BorderRadius.circular(20)
+                    ),
+                    child: Icon(Icons.favorite_border, color: Colors.white,),
                   ),
-                  Container()
+                  SizedBox(width: 10,),
+                  Expanded(
+                    child: Container(
+                      height: 60,
+                      decoration: BoxDecoration(color: primaryGreen, borderRadius: BorderRadius.circular(20)),
+                      child: Center(child: Text('Adoption', style: TextStyle(color: Colors.white, fontSize: 24),)),
+                    )
+                  )
                 ],
               ),
               decoration: BoxDecoration(

@@ -130,7 +130,11 @@ class _HomeScreenState extends State<HomeScreen> {
                                 boxShadow: shadowList),
                             margin: EdgeInsets.only(top: 50),
                           ),
-                          Align(child: Image.asset('images/pet-cat2.png'))
+                          Align(child: Hero(
+                            tag: 1,
+                            child: Image.asset('images/pet-cat2.png')
+                            )
+                          )
                         ],
                       ),
                     ),
