@@ -46,7 +46,7 @@ class Screen2 extends StatelessWidget {
               alignment: Alignment.topCenter,
               child: Hero(
                 tag: '1',
-                child: Image.asset('iamges/pet-cat2.png')
+                child: Image.asset('images/pet-cat2.png')
               ),
             ),
           ),
