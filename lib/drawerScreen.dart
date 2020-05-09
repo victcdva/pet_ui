@@ -11,8 +11,9 @@ class _DrawerScreenState extends State<DrawerScreen> {
   Widget build(BuildContext context) {
     return Container(
       color: primaryGreen,
-      padding: EdgeInsets.only(top: 50),
+      padding: EdgeInsets.only(top: 50, bottom: 70, left: 10),
       child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
@@ -28,7 +29,13 @@ class _DrawerScreenState extends State<DrawerScreen> {
             ],
           ),
           Column(
-            
+            children: drawerItems.map((e) => Row(
+              children: [
+                Icon(e['icon'], color: Colors.white, size: 30,),
+                SizedBox(width: 10,),
+                Text(e['title'], style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 200),)
+              ],
+            )).toList(),
           ),
           Row(
             children: [
