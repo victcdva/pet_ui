@@ -17,7 +17,7 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return AnimatedContainer(
       transform: Matrix4.translationValues(_xOffset, _yOffset, 0)
-        ..scale(_scaleFactor),
+        ..scale(_scaleFactor)..rotateY(_isDrawerOpen ? -0.5 : 0),
       duration: Duration(milliseconds: 250),
       decoration: BoxDecoration(
         color: Colors.grey[200],

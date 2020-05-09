@@ -29,12 +29,15 @@ class _DrawerScreenState extends State<DrawerScreen> {
             ],
           ),
           Column(
-            children: drawerItems.map((e) => Row(
-              children: [
-                Icon(e['icon'], color: Colors.white, size: 30,),
-                SizedBox(width: 10,),
-                Text(e['title'], style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 200),)
-              ],
+            children: drawerItems.map((e) => Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children: [
+                  Icon(e['icon'], color: Colors.white, size: 30,),
+                  SizedBox(width: 10,),
+                  Text(e['title'], style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 200),)
+                ],
+              ),
             )).toList(),
           ),
           Row(
