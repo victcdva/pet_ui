@@ -19,7 +19,10 @@ class _HomeScreenState extends State<HomeScreen> {
       transform: Matrix4.translationValues(_xOffset, _yOffset, 0)
         ..scale(_scaleFactor),
       duration: Duration(milliseconds: 250),
-      color: Colors.grey[200],
+      decoration: BoxDecoration(
+        color: Colors.grey[200],
+        borderRadius: BorderRadius.circular(_isDrawerOpen ? 40: 0.0)
+      ),
       child: SingleChildScrollView(
         child: Column(
           children: [
