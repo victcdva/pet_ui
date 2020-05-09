@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:petui/configuration.dart';
 import 'package:petui/screen2.dart';
 
-
 class HomeScreen extends StatefulWidget {
   @override
   _HomeScreenState createState() => _HomeScreenState();
